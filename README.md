@@ -1,0 +1,2 @@
+# KFUPM-EVENTS
+Platform for KFUPM EVENTS
