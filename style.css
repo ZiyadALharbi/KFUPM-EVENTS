@@ -1,0 +1,127 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar styling */
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+/* Header section */
+h1 {
+    color: #333;
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+/* Event description and details */
+p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Form styling */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-select, .form-control {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Submit button styling */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #f8f9fa;
+    color: #666;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+
+/* Card styling */
+.event-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Icons from Bootstrap Icons */
+.bi {
+    padding-right: 5px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Adjust padding and margin for card text */
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Styling for buttons, particularly the 'Apply' button */
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    border-radius: 20px; /* Rounded borders */
+    padding: 10px 24px; /* Larger padding for better touch area */
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Responsive tweaks might be necessary for better appearance on all devices */
+@media (max-width: 768px) {
+    .event-card {
+        margin: 0.5rem;
+    }
+}
