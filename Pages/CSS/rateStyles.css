@@ -1,0 +1,108 @@
+/* General body styling */
+body {
+    font-family: "inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffefe;
+  }
+
+/*navigation bar styling*/
+.navbar {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-brand {
+    font-weight: bold;
+    color: #2c2d2e !important;
+    font-size: 1.6rem;
+    padding-top: 16px;
+  }
+  .container {
+    margin-top: -10px;
+  }
+  
+  .nav-link {
+    font-size: 1.4rem;
+    color: #2c2d2e;
+    padding-top: 15px;
+  }
+  
+  .navbar-toggler:hover{
+    background-color: #06d192;
+  }
+  #profile-button {
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 35px;
+    margin-top: 10px;
+    margin-left: 0.5px;
+    background-color: #06d192; 
+    color: #2c2d2e; 
+    text-align: center;
+    border-radius: 20px; 
+    border: 2px solid #2c2d2e;
+    font-size: 20px;
+    transition: background-color 0.3s; 
+    cursor: pointer; 
+    text-decoration: none; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  h3{
+    text-align: center;
+    color: #fffefe;
+    border: 2rem #2c2d2e;
+    padding: 5px;
+  }
+
+  p{
+    
+  }
+
+  
+  #ratingContainerTitle{
+    background-color: #06d192;
+    border-radius: 10px;
+    border: 10px #2c2d2e;
+    padding-bottom: 10px;
+  }
+
+  #ratignContent{
+    background-color: #fffefe;
+    border-radius: 10px;  
+  }
+  
+  /* Star Rating Styling*/
+  .starRating{
+    color: #ffe400;
+  }
+
+  .starRating input {
+    display: none;
+  }
+
+  .starRating input + label{
+    font-size: 25px;
+    text-shadow: 1px 1px 0 #ffe400;
+    cursor: pointer;
+  }
+
+  .starRating input:checked + label ~ label{
+    color: #838383;
+  }
+
+  .starRating label:active{
+    transform: scale(0.8);
+    transition: 0.3s ease;
+  }
+
+
+
+ textarea{
+    width: auto;
+ }
+
+ .btn {
+    align-items: center;
+ }
+
+
