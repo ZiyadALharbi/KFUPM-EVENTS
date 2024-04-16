@@ -22,12 +22,21 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../event-page.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">EVENTLY</a>
+      <div class="container mx-6">
+        <a class="navbar-brand" href="#"
+          ><img
+            class="rounded-circle"
+            src="/Users/ziyadalharbi/KFUPM-EVENTS/assets/icons/black-circle-svgrepo-com.svg"
+            alt="logo"
+            width="40"
+            height="40"
+          />
+          EVENTLY</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -39,10 +48,13 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav grid column-gap-lg-4">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Discover Events</a>
@@ -50,12 +62,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#">My Tickets</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="profile-button">Profile</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container mt-5">
+    <div class="container mt-2">
       <h1>ICS 202 Help Session</h1>
       <div class="row">
         <div class="col-8">
@@ -64,132 +79,219 @@
             id="Event-page-image"
             src="/Users/ziyadalharbi/KFUPM-EVENTS/assets/helpseesion.jpeg"
             alt="photo"
+            width="1293"
+            height="727"
           />
         </div>
         <div class="col-4">
-          <div class="card">
+          <div class="card " id="info-card">
             <div class="card-body">
-              <div class="col">
-                <div class="row event-info">
-                  <div class="col">
-                    <i class="bi bi-person-vcard" class="icon"></i>
-                    <span class="icon-name">Computer Club</span>
-                  </div>
-                </div>
-                <div class="row event-info">
-                  <div class="col">
-                    <i class="bi bi-building" class="icon"></i>
-                    <span class="icon-name">Club</span>
-                  </div>
-                </div>
-                <div class="row event-info">
-                  <div class="col">
-                    <i class="bi bi-person-vcard" class="icon"></i>
-                    <span class="icon-name">Sun 25 Feb.2024</span>
-                  </div>
-                </div>
-                <div class="row event-info">
-                  <div class="col">
-                    <i class="bi bi-person-vcard" class="icon"></i>
-                    <span class="icon-name">7:30 - 9:00 PM</span>
-                  </div>
-                </div>
-                <div class="row event-info">
-                  <div class="col">
-                    <i class="bi bi-person-vcard" class="icon"></i>
-                    <span class="icon-name">Online - MS Teams</span>
-                  </div>
-                </div>
+              <div class="event-info">
+                <img class="icon" src="/Users/ziyadalharbi/KFUPM-EVENTS/assets/icons/user.svg"></img>
+                <span class="icon-name">Computer Club</span>
               </div>
-              <div class="row event-info">
-                <div class="col">
-                  <button class="btn btn-primary btn-success">Apply</button>
-                </div>
+              <div class="event-info">
+                <img class="icon" src="/Users/ziyadalharbi/KFUPM-EVENTS/assets/icons/users-group.svg"></img>
+                <span class="icon-name">Club</span>
+              </div>
+              <div class="event-info">
+                <img class="icon" src="/Users/ziyadalharbi/KFUPM-EVENTS/assets/icons/calendar-month.svg"></img>
+                <span class="icon-name">Sun 25 Feb.2024</span>
+              </div>
+              <div class="event-info ">
+                <img class="icon" src="/Users/ziyadalharbi/KFUPM-EVENTS/assets/icons/clock-hour-3.svg"></img>
+                <span class="icon-name">7:30 - 9:00 PM</span>
+              </div>
+              <div class="event-info">
+                <img class="icon" src="/Users/ziyadalharbi/KFUPM-EVENTS/assets/icons/map.svg"></img>
+                <span class="icon-name">Online - MS Teams</span>
+              </div>
+              <div class="mx-5 text-center">
+                <button class="btn btn-primary btn-success" id="apply-button">
+                  Apply
+                </button>
               </div>
             </div>
           </div>
         </div>
 
         <div>
-            <!-- The actual tags -->
-            <a href="#" class="tag">Course</a>
-            <a href="#" class="tag">Java</a>
-            <a href="#" class="tag">Data Structure</a>
+
+          <a href="#" class="tag">Course</a>
+          <a href="#" class="tag">Java</a>
+          <a href="#" class="tag">Data Structure</a>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">About</h2>
+              <p class="card-text" id="description">
+                A resilient system must also be able to weather unexpected
+                shocks and supply disruptions. For decades, policymakers have
+                relied heavily on two types of buffers: the spare capacity of
+                oil-producing countries (especially Saudi Arabia) and strategic
+                stockpiles, which members of the IEA are required to hold as
+                part of an agreement forged after the Arab oil embargo in the
+                1970s. These historical buffers will still matter as the
+                transition unfolds—even more so if, as seems likely today,
+                declines in energy supply and investment are not synchronized
+                with declines in demand, leading to less slack in the system to
+                handle unexpected shocks and more volatility. Moreover, it is
+                clear that Riyadh has become far less willing to dip into its
+                spare capacity whenever Washington demands it.
+              </p>
+            </div>
           </div>
-
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title">About</h2>
-          <p class="card-text" id="description">
-            A resilient system must also be able to weather unexpected shocks
-            and supply disruptions. For decades, policymakers have relied
-            heavily on two types of buffers: the spare capacity of oil-producing
-            countries (especially Saudi Arabia) and strategic stockpiles, which
-            members of the IEA are required to hold as part of an agreement
-            forged after the Arab oil embargo in the 1970s. These historical
-            buffers will still matter as the transition unfolds—even more so if,
-            as seems likely today, declines in energy supply and investment are
-            not synchronized with declines in demand, leading to less slack in
-            the system to handle unexpected shocks and more volatility.
-            Moreover, it is clear that Riyadh has become far less willing to dip
-            into its spare capacity whenever Washington demands it.
-          </p>
         </div>
-      </div>
+
+        <div class="container">
+          <div class="container mt-4 mb-5" id="form-container">
+            <h3 class="mt-2" id="form-title">Form</h3>
+            <div class="container mt-1 mb-4" id="questions-container">
+              <form>
+                <!-- Question 1 -->
+                <div class="container m-1 mt-2" id="questions">
+                  <div class="form-group mb-3">
+                    <label for="howHeard" class="question"
+                      >1. How did you hear about this event? *</label
+                    >
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="howHeard"
+                        id="socialMedia"
+                        value="socialMedia"
+                      />
+                      <label class="form-check-label" for="socialMedia"
+                        >Social media</label
+                      >
+                      <br />
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="howHeard"
+                        id="email"
+                        value="email"
+                      />
+                      <label class="form-check-label" for="email">Email</label>
+                      <br />
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="howHeard"
+                        id="friends"
+                        value="friends"
+                      />
+                      <label class="form-check-label" for="friends"
+                        >Friends</label
+                      >
+                      <br />
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="howHeard"
+                        id="printedPoster"
+                        value="printedPoster"
+                      />
+                      <label class="form-check-label" for="printedPoster"
+                        >Printed Poster</label
+                      >
+                      <br />
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="howHeard"
+                        id="other"
+                        value="other"
+                      />
+                      <label class="form-check-label" for="other">Other</label>
+                    </div>
+
+                  </div>
 
 
-      <div class="container mt-4 mb-5" id="form-container">
-        <h3 class="mt-3" id="form-title">Form</h3>
-        <div class="container mt-1 mb-4" id="questions-container">
-          <form>
-            <!-- Question 1 -->
-            <div class="container m-3 mt-2" id="questions">
-              <div class="form-group mb-3">
-                <label for="howHeard">1. How did you hear about this event? *</label>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="howHeard" id="socialMedia" value="socialMedia">
-                  <label class="form-check-label" for="socialMedia">Social media</label>
-                  <br>
-                  <input class="form-check-input" type="radio" name="howHeard" id="email" value="email">
-                  <label class="form-check-label" for="email">Email</label>
-                  <br>
-                  <input class="form-check-input" type="radio" name="howHeard" id="friends" value="friends">
-                  <label class="form-check-label" for="friends">Friends</label>
-                  <br>
-                  <input class="form-check-input" type="radio" name="howHeard" id="printedPoster" value="printedPoster">
-                  <label class="form-check-label" for="printedPoster">Printed Poster</label>
-                  <br>
-                  <input class="form-check-input" type="radio" name="howHeard" id="other" value="other">
-                  <label class="form-check-label" for="other">Other</label>
+                  <div class="form-group">
+                    <label for="interestReason" class="question"
+                      >2. Why are you interested in joining the bootcamp?
+                      *</label
+                    >
+                    <textarea
+                      class="form-control mt-2"
+                      id="interestReason"
+                      rows="3"
+                    ></textarea>
+                  </div>
+
+                  
                 </div>
-                <!-- Add other radio options similarly -->
-              </div>
-    
-              <!-- Question 2 -->
-              <div class="form-group">
-                <label for="interestReason">2. Why are you interested in joining the bootcamp? *</label>
-                <textarea class="form-control mt-2" id="interestReason" rows="3"></textarea>
-              </div>
-    
-              <!-- Duplicate Question Number Fix -->
-              <!-- Remove the duplicate question -->
+
+
+                <div class="text-center">
+                  <button type="submit" class="custom-submit-btn submit-button">
+                    Submit
+                  </button>
+                </div>
+              </form>
             </div>
-            
-  
-            <!-- Submit Button -->
-            <div class="text-center">
-              <button type="submit" class="custom-submit-btn submit-button">Submit</button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
+    </div>
 
-    <footer class="footer mt-auto py-3 bg-light">
-      <div class="container">
-        <span class="text-muted"
-          >&copy; 2024 EVENTLY - All Rights Reserved</span
-        >
+    <footer>
+      <div class="footertitle">
+          <h3 class="titles">Evently</h3>
       </div>
-    </footer>
+
+      <div class="footerexplore">
+          <h3 class="titles">Explore Discover</h3>
+          <a href=""><p class="paras">Events near me</p></a>
+      </div>
+
+      <div class="footerinfo">
+          <h3 class="titles">Info</h3>
+          <a href="">
+              <p class="paras">About</p>
+          </a>
+          <a href="">
+              <p class="paras">Contact Us</p>
+          </a>
+          <a href="">
+              <p class="paras">Privacy</p>
+          </a>
+          <a href="">
+              <p class="paras">Terms</p>
+          </a>
+      </div>
+
+      <div class="footerapps">
+          <h3 class="titles">Evently Apps</h3>
+          <p>Sell</p>
+          <a href="">
+              <p class="paras">Experience</p>
+          </a>
+          <a href="">
+              <p class="paras">Promote</p>
+          </a>
+          <a href="">
+              <p class="paras">Calender</p>
+          </a>
+          <a href="">
+              <p class="paras">Discover</p>
+          </a>
+      </div>
+
+      <div>
+          <p class="copyright">© 2024 Eventiy - All Rights Reserved</p>
+      </div>
+      <div class="lastdiv">
+          <a href=""><img src="/Resources/whatsapp.png"></img></a>
+          <a href=""><img src="/Resources/twitter.png"></img></a>
+          <a href=""><img src="/Resources/youtube.png"></img></a>
+          <a href=""><img src="/Resources/instagram.png"></img></a>
+
+      </div>
+  </footer>
   </body>
 </html>
