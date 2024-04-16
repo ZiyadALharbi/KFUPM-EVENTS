@@ -66,50 +66,56 @@
             alt="photo"
           />
         </div>
-        <div class="col">
+        <div class="col-4">
           <div class="card">
             <div class="card-body">
               <div class="col">
-                <div class="row">
+                <div class="row event-info">
                   <div class="col">
                     <i class="bi bi-person-vcard" class="icon"></i>
                     <span class="icon-name">Computer Club</span>
                   </div>
                 </div>
-                <div class="row">
+                <div class="row event-info">
                   <div class="col">
-                    <i class="bi bi-person-vcard" class="icon"></i>
+                    <i class="bi bi-building" class="icon"></i>
                     <span class="icon-name">Club</span>
                   </div>
                 </div>
-                <div class="row">
+                <div class="row event-info">
                   <div class="col">
                     <i class="bi bi-person-vcard" class="icon"></i>
                     <span class="icon-name">Sun 25 Feb.2024</span>
                   </div>
                 </div>
-                <div class="row">
+                <div class="row event-info">
                   <div class="col">
                     <i class="bi bi-person-vcard" class="icon"></i>
                     <span class="icon-name">7:30 - 9:00 PM</span>
                   </div>
                 </div>
-                <div class="row">
+                <div class="row event-info">
                   <div class="col">
                     <i class="bi bi-person-vcard" class="icon"></i>
                     <span class="icon-name">Online - MS Teams</span>
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row event-info">
                 <div class="col">
-                  <div class="btn btn-primary" id="apply"></div>
+                  <button class="btn btn-primary btn-success">Apply</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+
+        <div>
+            <!-- The actual tags -->
+            <a href="#" class="tag">Course</a>
+            <a href="#" class="tag">Java</a>
+            <a href="#" class="tag">Data Structure</a>
+          </div>
 
       <div class="card">
         <div class="card-body">
@@ -131,39 +137,52 @@
         </div>
       </div>
 
-      <h2>When & Where</h2>
-      <p>
-        Sunday 25 Feb. 2024, 7:30 - 9:00 PM <br />
-        Online - MS Teams
-      </p>
 
-      <form>
-        <div class="mb-3">
-          <label for="howHeard" class="form-label"
-            >How did you hear about this event?</label
-          >
-          <select class="form-select" id="howHeard">
-            <option selected>Choose...</option>
-            <option value="socialMedia">Social Media</option>
-            <option value="email">Email</option>
-            <option value="friends">Friends</option>
-            <option value="printedPoster">Printed Poster</option>
-            <option value="other">Other</option>
-          </select>
+      <div class="container mt-4 mb-5" id="form-container">
+        <h3 class="mt-3" id="form-title">Form</h3>
+        <div class="container mt-1 mb-4" id="questions-container">
+          <form>
+            <!-- Question 1 -->
+            <div class="container m-3 mt-2" id="questions">
+              <div class="form-group mb-3">
+                <label for="howHeard">1. How did you hear about this event? *</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="howHeard" id="socialMedia" value="socialMedia">
+                  <label class="form-check-label" for="socialMedia">Social media</label>
+                  <br>
+                  <input class="form-check-input" type="radio" name="howHeard" id="email" value="email">
+                  <label class="form-check-label" for="email">Email</label>
+                  <br>
+                  <input class="form-check-input" type="radio" name="howHeard" id="friends" value="friends">
+                  <label class="form-check-label" for="friends">Friends</label>
+                  <br>
+                  <input class="form-check-input" type="radio" name="howHeard" id="printedPoster" value="printedPoster">
+                  <label class="form-check-label" for="printedPoster">Printed Poster</label>
+                  <br>
+                  <input class="form-check-input" type="radio" name="howHeard" id="other" value="other">
+                  <label class="form-check-label" for="other">Other</label>
+                </div>
+                <!-- Add other radio options similarly -->
+              </div>
+    
+              <!-- Question 2 -->
+              <div class="form-group">
+                <label for="interestReason">2. Why are you interested in joining the bootcamp? *</label>
+                <textarea class="form-control mt-2" id="interestReason" rows="3"></textarea>
+              </div>
+    
+              <!-- Duplicate Question Number Fix -->
+              <!-- Remove the duplicate question -->
+            </div>
+            
+  
+            <!-- Submit Button -->
+            <div class="text-center">
+              <button type="submit" class="custom-submit-btn submit-button">Submit</button>
+            </div>
+          </form>
         </div>
-        <div class="mb-3">
-          <label for="interestReason" class="form-label"
-            >Why are you interested in joining the bootcamp?</label
-          >
-          <textarea
-            class="form-control"
-            id="interestReason"
-            rows="3"
-          ></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
+      </div>
 
     <footer class="footer mt-auto py-3 bg-light">
       <div class="container">
