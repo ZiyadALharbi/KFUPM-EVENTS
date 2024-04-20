@@ -1,4 +1,13 @@
 /* General body styling */
+:root{
+  margin: 0;
+  padding: 0;
+  --defGreen: #06E46D;
+  --defgraywhite: #F5F5F5;
+  --footergray: #2C2E2D;
+}
+
+
 body {
   font-family: "inter", sans-serif;
   margin: 0;
@@ -277,19 +286,16 @@ footer{
 .footerexplore{
   flex: 1 1 15%;
   text-align: center;
-
 }
 
 .footerinfo{
   flex: 1 1 15%;
   text-align: center;
-
 }
 
 .footerapps{
   flex: 1 1 15%;
   text-align: center;
-
 }
 
 footer img{
