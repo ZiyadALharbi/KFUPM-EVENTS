@@ -341,3 +341,19 @@ footer img{
         margin-right: auto;
     }
 }
+
+
+/*
+Js Styles
+*/
+
+.inputerror{
+    font-family: 'Inter', sans-serif !important;;
+    color: red;
+    font-weight: 800;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 5px;
+    background-color: var(--defGreen);
+    padding: 5px;
+}

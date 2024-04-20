@@ -172,7 +172,7 @@ select{
 }
 
 .firsttextmain{
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 600;
     margin-top: 70px;
     margin-bottom: 30px;
@@ -338,4 +338,21 @@ footer img{
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+
+
+/*
+Js Styles
+*/
+
+.inputerror{
+    font-family: 'Inter', sans-serif !important;;
+    color: red;
+    font-weight: 800;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 5px;
+    background-color: var(--defGreen);
+    padding: 5px;
 }
