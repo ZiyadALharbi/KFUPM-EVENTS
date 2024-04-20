@@ -29,13 +29,14 @@
   </head>
   <body>
 <header>
-
+  
+  <!-- Navigation bar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container mx-6">
       <a class="navbar-brand" href="#"
         ><img
           class="rounded-circle"
-          src="/Users/ziyadalharbi/KFUPM-EVENTS/assets/icons/black-circle-svgrepo-com.svg"
+          src="../../assets/icons/black-circle-svgrepo-com.svg"
           alt="logo"
           width="40"
           height="40"
@@ -81,12 +82,13 @@
 <h3>Rating</h3>
 <!--rating box-->
 <div class="container" id="ratignContent">
-<form action="https://wp.zybooks.com/form-viewer.php" method="post" target="_blank">
+<form  method="post">
 
   <!--First Question-->
+  
   <p>1. How would you rate your overall satisfaction with the event?</p>
   <div class="starRating">
-    <input type="radio" name="rating1" id="rating1-1" value="1">
+    <input type="radio" name="rating1" id="rating1-1" value="1" required>
     <label for="rating1-1" class="fa fa-star"></label>
     <input type="radio" name="rating1" id="rating2-1" value="2">
     <label for="rating2-1" class="fa fa-star"></label>
@@ -101,7 +103,7 @@
   <!--second Question-->
 <p>2. How would rate the organization?</p>
 <div class="starRating">
-  <input type="radio" name="rating2" id="rating1-2" value="1">
+  <input type="radio" name="rating2" id="rating1-2" value="1" required>
   <label for="rating1-2" class="fa fa-star"></label>
   <input type="radio" name="rating2" id="rating2-2" value="2">
   <label for="rating2-2" class="fa fa-star"></label>
@@ -116,7 +118,7 @@
 <!--third Question-->
 <p>3. How would rate the content of event?</p>
 <div class="starRating">
-  <input type="radio" name="rating3" id="rating1-3" value="1">
+  <input type="radio" name="rating3" id="rating1-3" value="1" required>
   <label for="rating1-3" class="fa fa-star"></label>
   <input type="radio" name="rating3" id="rating2-3" value="2">
   <label for="rating2-3" class="fa fa-star"></label>
@@ -131,10 +133,11 @@
 <!--fourth Question-->
 <p>4. Would you recommend this type of event to a friend or colleague?</p>
 <div class="choice">
-<input type="radio" name="choice" id="choice1" value="yes">
+<input type="radio" name="choice" id="choice1" value="yes" required>
 <label for="choice1">Yes</label>
+<br>
 <input type="radio" name="choice" id="choice2" value="no">
-<label for="choice2">no</label>
+<label for="choice2">No</label>
 </div>
 
 <!--fifth Question-->
@@ -144,14 +147,68 @@
 </div>
 
 <!-- Submit button -->
+<div class="text-center" >
 <button type="submit" class="btn">Post</button>
+</div>
 
 </form>
 </div>
 </div>
 
+<footer>
+  <div class="footertitle">
+    <h3 class="titles">Evently</h3>
+</div>
 
+<div class="footerexplore">
+    <h3 class="titles">Explore Discover</h3>
+    <a href=""><p class="paras">Events near me</p></a>
+</div>
 
+<div class="footerinfo">
+    <h3 class="titles">Info</h3>
+    <a href="">
+        <p class="paras">About</p>
+    </a>
+    <a href="">
+        <p class="paras">Contact Us</p>
+    </a>
+    <a href="">
+        <p class="paras">Privacy</p>
+    </a>
+    <a href="">
+        <p class="paras">Terms</p>
+    </a>
+</div>
+
+<div class="footerapps">
+    <h3 class="titles">Evently Apps</h3>
+    <p>Sell</p>
+    <a href="">
+        <p class="paras">Experience</p>
+    </a>
+    <a href="">
+        <p class="paras">Promote</p>
+    </a>
+    <a href="">
+        <p class="paras">Calender</p>
+    </a>
+    <a href="">
+        <p class="paras">Discover</p>
+    </a>
+</div>
+
+<div>
+    <p class="copyright">© 2024 Eventiy - All Rights Reserved</p>
+</div>
+<div class="lastdiv">
+    <a href=""><img src="../../assets/whatsapp.png"></img></a>
+    <a href=""><img src="../../assets/twitter.png"></img></a>
+    <a href=""><img src="../../assets/youtube.png"></img></a>
+    <a href=""><img src="../../assets/instagram.png"></img></a>
+
+</div>
+</footer>
 
   </body>
   </html>  
