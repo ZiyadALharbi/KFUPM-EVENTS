@@ -13,6 +13,9 @@ body {
     --defgraywhite: #F5F5F5;
     --footergray: #2C2E2D;
   }
+  a{
+    text-decoration: none;
+  }
 
 /*navigation bar styling*/
 .navbar {
