@@ -11,42 +11,48 @@
       <link rel="stylesheet" href="../CSS/profileStyle2.css">
     </head>
     <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
-                    <img class="img1" src="../../assets/image.png">
-                    <a class="navbar-brand" href="#">EVENTLY</a>
-                  <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="home.html">Discover Events</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Log out</a>
-                      </li>
-                      <li class="nav-item1">
-                        <a href="#" class="icon"><img class="img2" src="../../assets/image2.png"></a>
-                      </li>
-                    </ul>
-                  </div>    
-                </div>
-              </nav>
-        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container mx-6">
+              <a class="navbar-brand" href="#"
+                ><img
+                  class="rounded-circle"
+                  src="/assets/icons/black-circle-svgrepo-com.svg"
+                  alt="logo"
+                  width="40"
+                  height="40"
+                />EVENTLY</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarNav"
+              >
+                <ul class="navbar-nav grid column-gap-lg-4">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Discover Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My Tickets</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="profile-button">Log out</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <main>
             <div>
                 <img class="img-fluid" src="../../assets/Headerimage.png" alt="Header">
@@ -108,36 +114,60 @@
             </div>
             </div>
         </main>
-        <footer class="footer">
-            <h3 class="logo">EVENTIY</h3>
-            <div id="sticky-sm-bottom">
-                <div id="part1">
-                    <h3>Explore Discover</h3>
-                    <label>Events near me</label>
-                </div>
-                <div id="part2">
-                    <h3>Info</h3>
-                     <label>About</label><br>
-                    <label>Contact us</label><br>
-                    <label>Privacy</label><br>
-                    <label>Terms</label>
-                </div>
-                <div id="part3">
-                    <h3>EVENTIY Apps</h3>
-                    <label>Sell</label>
-                    <label>Experience</label><br>
-                    <label>promote</label><br>
-                    <label>Calendar</label><br>
-                    <label>Discover</label>
-                </div>
+        <footer>
+            <div class="footertitle">
+                <h3 class="titles">Evently</h3>
             </div>
-            <h3 class="copy">&copy; 2024 Eventiy - All Rights Reserved</h3>
-            <div class="social">
-                <a class="whats" href="https://www.whatsapp.com"><img src="../../assets/whats.png"></a>
-                
-                <a class="x" href="https://www.x.com"><img src="../../assets/XX.png"></a>
-                <a class="tube" href="https://www.youtube.com"><img src="../../assets/youtube.png"></a>
-                <a class="insta" href="https://www.instagram.com"><img src="../../assets/inst.png"></a>
+    
+            <div class="footerexplore">
+                <h3 class="titles">Explore Discover</h3>
+                <a href=""><p class="paras">Events near me</p></a>
+            </div>
+    
+            <div class="footerinfo">
+                <h3 class="titles">Info</h3>
+                <a href="">
+                    <p class="paras">About</p>
+                </a>
+                <a href="">
+                    <p class="paras">Contact Us</p>
+                </a>
+                <a href="">
+                    <p class="paras">Privacy</p>
+                </a>
+                <a href="">
+                    <p class="paras">Terms</p>
+                </a>
+            </div>
+    
+            <div class="footerapps">
+                <h3 class="titles">Evently Apps</h3>
+                <a href="">
+                    <p class="paras">Sell</p>
+                </a>
+                <a href="">
+                    <p class="paras">Experience</p>
+                </a>
+                <a href="">
+                    <p class="paras">Promote</p>
+                </a>
+                <a href="">
+                    <p class="paras">Calender</p>
+                </a>
+                <a href="">
+                    <p class="paras">Discover</p>
+                </a>
+            </div>
+    
+            <div>
+                <p class="copyright">© 2024 Eventiy - All Rights Reserved</p>
+            </div>
+            <div class="lastdiv">
+                <a href=""><img src="/assets/whatsapp.png"></img></a>
+                <a href=""><img src="/assets/twitter.png"></img></a>
+                <a href=""><img src="/assets/youtube.png"></img></a>
+                <a href=""><img src="/assets/instagram.png"></img></a>
+    
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

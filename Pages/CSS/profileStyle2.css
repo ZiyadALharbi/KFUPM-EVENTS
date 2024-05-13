@@ -5,9 +5,6 @@ body {
     background-color: #f4f4f4;
     overflow-x: hidden;
   }
-  a{
-    text-decoration: none;
-  }
   .navbar {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
@@ -36,7 +33,7 @@ body {
     padding: 5px 35px;
     margin-top: 10px;
     margin-left: 0.5px;
-    background-color: #06d192; 
+    background-color: #ec5830; 
     color: #2c2d2e; 
     text-align: center;
     border-radius: 20px; 
@@ -48,40 +45,6 @@ body {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
   
-  .img1{
-    width: 45px;
-    position: relative;
-    right:50px;
-
-  }
-  .img2{
-    width:26px;
-    position: relative;
-    left: 10px;
-    
-  }
-  .icon{
-    position: relative;
-    bottom: -8px;
-  }
-  
-  /* Navbar styling */
-  .navbar-brand {
-    font-weight: bold;
-    color: #000000 !important;
-  }
-
-  h1 {
-    color: #333;
-    font-size: 36px;
-    padding-top: 20px;
-    font-weight: medium;
-  }
-
-  #navbarNav{
-    position: relative;
-    left:570px;
-  }
   .profile{
     position: relative;
     top:-160px;
@@ -215,65 +178,113 @@ body {
         white-space: normal;
       }
       
-  .footer{
-    background-color: #06D192;
-    font-family: "DM Sans", sans-serif;
-    position: relative;
-    top:100px;
-    padding-top: -20px;
-  }
-
-  footer h3{
-    font-size: 32px;
-    font-weight: bold;
-  }
-  footer label{
-    font-size: 26px;
-  }
-
-  #links{
-    display: grid;
-    
-  }
-  .social{
-    position: relative;
-    left:1200px;
-    justify-content: space-around;
-  }
-  .whats, .x, .tube, .insta{
-    margin-right: 20px;
-  }
-  #part1{
-    position: relative;
-    left:560px;
-    top:-10px;
-    
-  }
-  #part2{
-    
-    position: relative;
-    left:900px;
-    top:12px;
-    top:-95px;
-  }
-  #part3{
-    float:right;
-    position: relative;
-    top:-299px;
-    left:-200px;
-  }
-  .logo{
-    position: relative;
-    top:34px;
-    left:30px;
-  }
-  .copy{
-    position: relative;
-    bottom: -65px;
-  }
-
-  @media (max-width: 768px) {
-    .event-card {
-      margin: 0.5rem;
-    }
-  }
+      footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #06E46D;
+        padding: 15px;
+      }
+      
+      .footertitle{
+        flex: 1 1 50%;
+        margin-left: 20px;
+        font-size: 2rem !important;
+      }
+      
+      .titles{
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: #2C2E2D;
+      }
+      
+      .paras{
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #2C2E2D;
+      
+      }
+      
+      .copyright{
+        font-size: calc(0.3rem + 1.5vw);
+        font-weight: 800;
+        color: #2C2E2D;
+        margin-left: 20px;
+      }
+      
+      .footerexplore{
+        flex: 1 1 15%;
+        text-align: center;
+      
+      }
+      
+      .footerinfo{
+        flex: 1 1 15%;
+        text-align: center;
+      
+      }
+      
+      .footerapps{
+        flex: 1 1 15%;
+        text-align: center;
+      
+      }
+      
+      footer img{
+        width: 30px;
+        height: auto;
+        margin-left: 10px;
+      }
+      
+      
+      @media (max-width: 711px){
+        .footertitle{
+            flex: 1 1 20%;
+            margin-left: 20px;
+            font-size: 2rem !important;
+        }
+      }
+      
+      
+      @media (max-width: 508px){
+        footer{
+            flex-direction: column;
+        }
+      
+        .footertitle{
+            width: fit-content;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+      
+        .copyright{
+            width: fit-content;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            font-size: 0.8rem;
+        }
+      }
+      
+      @media (max-width: 485.56px){
+        .lastdiv{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+      }
+      
+      
+      /*
+      Js Styles
+      */
+      
+      .inputerror{
+        font-family: 'Inter', sans-serif !important;;
+        color: red;
+        font-weight: 800;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin-top: 5px;
+        background-color: var(--defGreen);
+        padding: 5px;
+      }
