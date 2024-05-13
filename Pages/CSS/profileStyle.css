@@ -53,10 +53,7 @@ body {
     font-weight: medium;
   }
 
-  #navbarNav{
-    position: relative;
-    left:570px;
-  }
+  
   .profile{
     position: relative;
     top:-160px;
