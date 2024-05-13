@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // MongoDB connection string (replace <username>, <password>, and <dbname> with your actual credentials)
-const uri = 'mongodb://0,0,0,0:27017/eventy';
+const uri = 'mongodb+srv://Saud:1234@cluster0.hr9omjq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 // Mongoose options to avoid deprecation warnings
 // Updated options
