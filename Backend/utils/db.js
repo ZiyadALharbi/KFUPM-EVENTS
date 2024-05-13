@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // MongoDB connection string (replace <username>, <password>, and <dbname> with your actual credentials)
-const uri = 'mongodb://localhost:27017/eventy';
+const uri = 'mongodb://kfupm-events.onrender.com:27017/eventy';
 
 // Mongoose options to avoid deprecation warnings
 // Updated options
