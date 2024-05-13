@@ -5,30 +5,49 @@ body {
     background-color: #f4f4f4;
     overflow-x: hidden;
   }
-  .navbar-brand{
-    font-size: 36px;
-    position: relative;
-    right:50px;
+  a{
+    text-decoration: none;
   }
-  .nav-link{
-    color: #000000;
-    display: grid;
-    
+  .navbar {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
-  .nav-item{
-    font-size: 29px;
+  .navbar-brand {
     font-weight: bold;
-    color: #000000;
-    margin-right: 40px;
+    color: #2c2d2e !important;
+    font-size: 1.6rem;
+    padding-top: 16px;
   }
-
-  .nav-item1{
-    font-size: 29px;
+  .container {
+    margin-top: -10px;
+  }
+  
+  .nav-link {
+    font-size: 1.4rem;
+    color: #2c2d2e;
+    padding-top: 15px;
+  }
+  
+  .navbar-toggler:hover{
+    background-color: #06d192;
+  }
+  #profile-button {
     font-weight: bold;
-    color: #000000;
-    position: relative;
-    left:-39px
+    display: inline-block;
+    padding: 5px 35px;
+    margin-top: 10px;
+    margin-left: 0.5px;
+    background-color: #06d192; 
+    color: #2c2d2e; 
+    text-align: center;
+    border-radius: 20px; 
+    border: 2px solid #2c2d2e;
+    font-size: 20px;
+    transition: background-color 0.3s; 
+    cursor: pointer; 
+    text-decoration: none; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
+  
   .img1{
     width: 45px;
     position: relative;

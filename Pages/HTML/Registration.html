@@ -4,29 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="/Pages/CSS/RegistrationStyles.css">
+    <link rel="stylesheet" href="../CSS/RegistrationStyles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="/Pages/JS/Registration.js" defer></script>
     <title>Registeration</title>
 </head>
 <body>
-    <header class="container-fluid">
-        <div class="row justify-content-between container-fluid">
-            
-            <div class="col-lg-8 headeradjust row justify-content-start align-items-center headerdivs">
-                <a href="" class="col-lg-1"><img src="/Resources/instagram.png" class="imgsmal" alt=""></a>
-                <a href="" class="col-lg-2 headerText"><p class="headerText logotext">Evently</p></a>
-            </div>
-            <div class="headernav col-lg-4 row justify-content-between align-items-center headerdivs">
-
-                <a href="" class="headerText"><p class="headerText">Home</p></a>
-                <a href="" class="headerText"><p class="headerText">My Tickets</p></a>
-                <a href="" class="headerText"><p class="headerText">Discover </p></a>
-            </div>
-
-    </div>
-
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container mx-6">
+          <a class="navbar-brand" href="home.html"
+            ><img
+              class="rounded-circle"
+              src="../../assets/icons/black-circle-svgrepo-com.svg"
+              alt="logo"
+              width="40"
+              height="40"
+            /> EVENTLY</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav grid column-gap-lg-4">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Discover Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My Tickets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Profile.html" id="profile-button">Profile</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
     <main class="container-fluid bigbackground justify-content-center">
         <div class="row container-fluid justify-content-center maingap">
 

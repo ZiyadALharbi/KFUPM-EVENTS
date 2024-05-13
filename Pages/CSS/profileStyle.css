@@ -5,6 +5,9 @@ body {
     background-color: #f4f4f4;
     overflow-x: hidden;
   }
+  a{
+    text-decoration: none;
+  }
   .navbar-brand{
     font-size: 36px;
     position: relative;
