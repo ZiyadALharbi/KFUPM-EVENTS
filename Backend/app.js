@@ -7,6 +7,7 @@ const db = require('./utils/db');
 const photoRoutes = require('./routes/photoRoutes');
 const nunjucks = require('nunjucks');
 const path = require('path');
+const eventController = require("./controllers/eventController");
 // Middleware
 app.use(express.json()); // Parse JSON request bodies
 
@@ -38,6 +39,9 @@ app.set('view engine', 'njk');
 app.get('/event', (req, res) => {
     res.render('event', { title: 'Event Page', eventTitle: 'ICS 202 Help Session' });
 });
+
+
+app.get('/page/:id', eventController.renderEventPage);
 
 
 // Start the server
