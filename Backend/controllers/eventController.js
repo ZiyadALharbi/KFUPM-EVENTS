@@ -120,7 +120,8 @@ exports.getEventById = async (req, res) => {
 // Controller function to render an event page
 exports.renderEventPage = async (req, res) => {
     try {
-        const event = await Event.findById(req.params.id);
+        const event = await Event.findById(req.params.id).populate('organizer'); // Populate organizer details
+
         if (!event) {
             return res.status(404).render('error.njk', { message: 'Event not found' });
         }

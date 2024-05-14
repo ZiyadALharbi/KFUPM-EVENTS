@@ -5,14 +5,14 @@
     <h1>{{ event.title }}</h1>
     <div class="row">
         <div class="col-8">
-            <img class="img-fluid" id="Event-page-image" src="../assets/helpseesion.jpeg" alt="photo" width="1293" height="727" />
+            <img class="img-fluid" id="Event-page-image" src="../{{ event.photo }}" alt="photo" width="1293" height="727" />
         </div>
         <div class="col-4">
             <div class="card " id="info-card">
                 <div class="card-body">
                     <div class="event-info">
                         <img class="icon" src="../assets/icons/user.svg" />
-                        <span class="icon-name">Computer Club</span>
+                        <span class="icon-name">{{ event.organizer.username }}</span>
                     </div>
                     <div class="event-info">
                         <img class="icon" src="../assets/icons/users-group.svg" />
@@ -20,22 +20,57 @@
                     </div>
                     <div class="event-info">
                         <img class="icon" src="../assets/icons/calendar-month.svg" />
-                        <span class="icon-name">Sun 25 Feb.2024</span>
-                    </div>
-                    <div class="event-info">
-                        <img class="icon" src="../assets/icons/clock-hour-3.svg" />
-                        <span class="icon-name">7:30 - 9:x00 PM</span>
+                        <span class="icon-name">{{ event.date }}</span>
                     </div>
                     <div class="event-info">
                         <img class="icon" src="../assets/icons/map.svg" />
-                        <span class="icon-name">Online - MS Teams</span>
+                        <span class="icon-name">{{ event.location }}</span>
                     </div>
                     <div class="mx-5 text-center">
-                        <button class="btn btn-primary btn-success" id="apply-button">Apply</button>
+                        <button class="btn btn-primary btn-success" id="apply-button" data-bs-toggle="modal" data-bs-target="#applyModal">Apply</button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Modal Structure -->
+        <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="applyModalLabel">Apply for Event</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="applyForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-success">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('applyForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // You can add your form submission logic here
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                console.log('Form submitted:', name, email);
+
+                // Optionally, you can close the modal after form submission
+                var applyModal = new bootstrap.Modal(document.getElementById('applyModal'));
+                applyModal.hide();
+            });
+        </script>
 
         <div>
             <a href="#" class="tag">Course</a>
@@ -47,19 +82,7 @@
                 <div class="card-body">
                     <h2 class="card-title">About</h2>
                     <p class="card-text" id="description">
-                        A resilient system must also be able to weather unexpected
-                        shocks and supply disruptions. For decades, policymakers have
-                        relied heavily on two types of buffers: the spare capacity of
-                        oil-producing countries (especially Saudi Arabia) and strategic
-                        stockpiles, which members of the IEA are required to hold as
-                        part of an agreement forged after the Arab oil embargo in the
-                        1970s. These historical buffers will still matter as the
-                        transition unfolds—even more so if, as seems likely today,
-                        declines in energy supply and investment are not synchronized
-                        with declines in demand, leading to less slack in the system to
-                        handle unexpected shocks and more volatility. Moreover, it is
-                        clear that Riyadh has become far less willing to dip into its
-                        spare capacity whenever Washington demands it.
+                        {{ event.description }}
                     </p>
                 </div>
             </div>

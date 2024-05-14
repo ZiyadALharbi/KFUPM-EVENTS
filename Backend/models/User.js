@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     }
-    // You can add more fields here as needed
+
 });
 
 // Hash password before saving user to the database

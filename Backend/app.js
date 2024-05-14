@@ -11,6 +11,7 @@ const eventController = require("./controllers/eventController");
 // Middleware
 app.use(express.json()); // Parse JSON request bodies
 
+app.use(express.static(path.join(__dirname, '/')));
 app.use(express.static(path.join(__dirname, '/public')));
 
 // Routes
@@ -36,13 +37,18 @@ app.set('view engine', 'njk');
 
 
 
-app.get('/event', (req, res) => {
-    res.render('event', { title: 'Event Page', eventTitle: 'ICS 202 Help Session' });
+// Define a route
+app.get('/', (req, res) => {
+    res.render('home.njk');
 });
 
 
 app.get('/page/:id', eventController.renderEventPage);
 
+// Define a route
+app.get('/login', (req, res) => {
+    res.render('login.njk');
+});
 
 // Start the server
 const PORT = process.env.PORT || 3000;

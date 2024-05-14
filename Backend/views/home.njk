@@ -1,0 +1,69 @@
+{% extends "layout.njk" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="bodyCenter">
+        <h1 class="featured">Featured</h1>
+        <section>
+            <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="event_page.html"><img class="d-block w-100 gallery-image" src="/public/assets/helpseesion.jpeg" alt="Image 1"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="event_page.html"><img class="d-block w-100 gallery-image" src="/public/uploads/1715682348647-photo-1524046997286-863495b9638e.webp" alt="Image 2"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="event_page.html"><img class="d-block w-100 gallery-image" src="/public/uploads/board-img.jpg" alt="Image 3"></a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="Categories main-container">
+            <h1 class="Categories-title">Categories</h1>
+            <div class="card-container">
+                <div class="card">
+                    <img src="/public/assets/math.png" alt="Help Sessions">
+                    <div class="card-content">
+                        <a href=""><h2>Help Sessions</h2></a>
+                        <p>Learn about these mechanisms which are going to have some kind of mechanical setup.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/public/uploads/mini-futbol-sahasi-ozellikleri-ve-olculeri.jpg" alt="Student Clubs">
+                    <div class="card-content">
+                        <a href=""><h2>Student Clubs</h2></a>
+                        <p>Enjoy attending some activity across the campus.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/public/uploads/board-img.jpg" alt="Public Events">
+                    <div class="card-content">
+                        <a href=""><h2>Public Events</h2></a>
+                        <p>Attend biggest university events during this time enjoy and present.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="
+    padding-left: 0px;">
+            <h1 class="upcoming-events">Upcoming Events</h1>
+            <div class="gallery">
+                <a href="event_page.html"><img class="gallery-image" src="/public/uploads/1715682348647-photo-1524046997286-863495b9638e.webp" alt="Image 1"></a>
+                <a href="event_page.html"><img class="gallery-image" src="/public/uploads/board-img.jpg" alt="Image 2"></a>
+                <a href="event_page.html"><img class="gallery-image" src="/public/assets/helpseesion.jpeg" alt="Image 3"></a>
+            </div>
+        </section>
+    </div>
+{% endblock %}

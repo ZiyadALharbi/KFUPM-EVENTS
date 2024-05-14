@@ -1,0 +1,62 @@
+{% extends "layout.njk" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+    <main class="container-fluid bigbackground justify-content-center">
+        <div class="row container-fluid justify-content-center maingap">
+            <h1 class="row justify-content-center firsttextmain">Login</h1>
+            <div class="row justify-content-center p-3 greenbackground col-lg-10 rounded rounded-3">
+                <p class="formtitle">Fill in the information</p>
+                <form action="" class="container-fluid justify-content-around bigbackground rounded p-4 rounded-3 border border-dark" id="form">
+                    <div class="row">
+                        <label for="email" class="label col-lg-2">Email:</label>
+                        <input type="text" name="email" id="email" class="col-lg-8">
+                    </div>
+                    <div class="row">
+                        <label for="password" class="label col-lg-2">Password:</label>
+                        <input type="text" name="password" id="password" class="col-lg-8">
+                    </div>
+                    <input type="submit" class="row justify-content-center" title="Submit">
+                </form>
+            </div>
+            <p class="row lasttextmain">Do not have an account? You can Register&nbsp;<a href="Registration.html">here!</a></p>
+        </div>
+    </main>
+    <script>
+        document.getElementById('form').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            const response = await fetch('/api/user/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, password })
+            });
+
+            const result = await response.json();
+            const messageElement = document.getElementById('signin-message');
+
+            if (response.ok) {
+                messageElement.textContent = 'Sign in successful';
+                // Store the token in localStorage
+                localStorage.setItem('token', result.token);
+                // Redirect or update the UI accordingly
+                window.location.href = 'profile.html';
+            } else {
+                messageElement.textContent = result.message || 'Sign in failed';
+            }
+        });
+
+        // Check if the user is signed in and hide the sign-in section if they are
+        document.addEventListener('DOMContentLoaded', () => {
+            const token = localStorage.getItem('token');
+            if (token) {
+                document.getElementById('signin-section').style.display = 'none';
+            }
+        });
+    </script>
+{% endblock %}

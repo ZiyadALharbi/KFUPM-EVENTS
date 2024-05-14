@@ -6,7 +6,7 @@ const eventController = require('../controllers/eventController');
 // Multer storage configuration
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, 'uploads/'); // Destination directory for uploaded files
+        cb(null, 'public/uploads/'); // Destination directory for uploaded files
     },
     filename: function (req, file, cb) {
         // Generate a unique filename for the uploaded file
