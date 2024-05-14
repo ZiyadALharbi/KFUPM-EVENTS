@@ -8,8 +8,10 @@ const photoRoutes = require('./routes/photoRoutes');
 const nunjucks = require('nunjucks');
 const path = require('path');
 const eventController = require("./controllers/eventController");
+const cors = require('cors');
 // Middleware
 app.use(express.json()); // Parse JSON request bodies
+app.use(cors());
 
 app.use(express.static(path.join(__dirname, '/')));
 app.use(express.static(path.join(__dirname, '/public')));
