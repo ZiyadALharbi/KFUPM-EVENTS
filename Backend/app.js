@@ -10,7 +10,7 @@ const path = require('path');
 // Middleware
 app.use(express.json()); // Parse JSON request bodies
 
-app.use(express.static(path.join(__dirname, '/')));
+app.use(express.static(path.join(__dirname, '/public')));
 
 // Routes
 app.use('/api/user', userRoutes);
@@ -43,6 +43,6 @@ app.get('/event', (req, res) => {
 // Start the server
 const PORT = process.env.PORT || 3000;
 //on deploy use 0,0,0,0
-app.listen(PORT, "0,0,0,0",() => {
+app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
