@@ -101,3 +101,33 @@ exports.uploadEventPhoto = async (req, res) => {
         res.status(500).json({ message: 'Server error' });
     }
 };
+
+
+// Controller function to fetch an event by ID
+exports.getEventById = async (req, res) => {
+    try {
+        const event = await Event.findById(req.params.id);
+        if (!event) {
+            return res.status(404).json({ message: 'Event not found' });
+        }
+        res.status(200).json(event);
+    } catch (err) {
+        console.error('Error fetching event:', err);
+        res.status(500).json({ message: 'Server error' });
+    }
+};
+
+// Controller function to render an event page
+exports.renderEventPage = async (req, res) => {
+    try {
+        const event = await Event.findById(req.params.id);
+        if (!event) {
+            return res.status(404).render('error.njk', { message: 'Event not found' });
+        }
+        res.status(200).render('event.njk', { event });
+    } catch (err) {
+        console.error('Error rendering event page:', err);
+        res.status(500).render('error.njk', { message: 'Server error' });
+    }
+};
+
