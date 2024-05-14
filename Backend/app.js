@@ -6,8 +6,11 @@ const eventRoutes = require('./routes/eventRoutes'); // Import event routes
 const db = require('./utils/db');
 const photoRoutes = require('./routes/photoRoutes');
 const nunjucks = require('nunjucks');
+const path = require('path');
 // Middleware
 app.use(express.json()); // Parse JSON request bodies
+
+app.use(express.static(path.join(__dirname, '/')));
 
 // Routes
 app.use('/api/user', userRoutes);
@@ -30,6 +33,8 @@ nunjucks.configure('views', {
 app.set('view engine', 'njk');
 
 
+
+
 app.get('/event', (req, res) => {
     res.render('event', { title: 'Event Page', eventTitle: 'ICS 202 Help Session' });
 });
@@ -37,6 +42,7 @@ app.get('/event', (req, res) => {
 
 // Start the server
 const PORT = process.env.PORT || 3000;
-app.listen(PORT,'0.0.0.0', () => {
+//on deploy use 0,0,0,0
+app.listen(PORT, "0,0,0,0",() => {
     console.log(`Server is running on port ${PORT}`);
 });
