@@ -10,7 +10,6 @@ Our journey began with the need to unify the KFUPM community's event registratio
 - **Increased Event Visibility**: Helps users easily discover and register for events.
 - **User-Friendly Interface**: Intuitive design ensures a positive experience.
 - **Data Security**: Hosted on MongoDB servers for robust user data protection.
-- **WhatsApp Messaging**: Enhances communication between organizers and participants.
 
 ## Technology Stack
 
