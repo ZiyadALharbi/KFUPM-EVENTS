@@ -418,7 +418,6 @@ form{
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(75vh + 20vw);
   margin-top: 20px;
 }
 

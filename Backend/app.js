@@ -51,6 +51,10 @@ app.get('/page/:id', eventController.renderEventPage);
 app.get('/login', (req, res) => {
     res.render('login.njk');
 });
+app.get('/profile', (req, res) => {
+    res.render('profile.njk');
+});
+
 
 // Start the server
 const PORT = process.env.PORT || 3000;

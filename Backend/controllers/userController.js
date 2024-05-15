@@ -58,3 +58,14 @@ exports.login = async (req, res) => {
         res.status(500).json({ message: 'Server error' });
     }
 };
+// Controller function to render an event page
+exports.getuserinfo = async (req, res) => {
+    try {
+        const user = await User.findById(req.params.id);// Populate organizer details
+
+        res.status(200).json({ user });
+    } catch (err) {
+        console.error('Error  user :', err);
+        res.status(500).render('error.njk', { message: 'Server error' });
+    }
+};
